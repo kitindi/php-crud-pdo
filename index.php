@@ -26,6 +26,7 @@ try {
                    <span class="flex  items-center gap-2">Email: <?php echo $user["email"]?></span>
                     <span class="flex items-center  gap-2">Country: <?php echo $user["country"]?></span>
                     <a href="update.php?u_id=<?php echo $user["id"];?>" class="px-8 py-1 bg-teal-600 text-white rounded-lg">Update</a>
+                    <a href="delete_action.php?u_id=<?php echo $user["id"];?>" class="bg-red-500 text-white px-8 py-1.5 rounded-md">Delete</a>
                 </li>
               <?php endforeach;?>
 

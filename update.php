@@ -26,6 +26,8 @@ try {
     <h3>Update the record</h3>
     <div>
         <form action="update_action.php" enctype="multipart/form-data" method="post" class="w-[300px]">
+            <!-- Hidden field for ID -->
+            <input type="hidden" name="id" value="<?= htmlspecialchars($contact['id']) ?>">
             <div class="flex flex-col gap-2 py-1">
                 <label for="name">Username</label>
                 <label class="w-full">
